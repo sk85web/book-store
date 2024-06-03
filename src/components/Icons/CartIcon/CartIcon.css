@@ -1,0 +1,21 @@
+.cart-icon {
+  cursor: pointer;
+  padding: 16px;
+  position: relative;
+}
+
+.cart-icon:hover svg path,
+.cart-icon:active svg path {
+  stroke: var(--contextual-red);
+}
+
+.icon-book-quantity {
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  padding: 3px 6px;
+  background-color: var(--contextual-red);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 4px;
+}

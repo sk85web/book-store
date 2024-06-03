@@ -1,0 +1,14 @@
+.search-icon {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.search-icon svg path {
+  transition: fill linear 0.2s;
+}
+.search-icon:hover svg path {
+  fill: var(--primary-light);
+}

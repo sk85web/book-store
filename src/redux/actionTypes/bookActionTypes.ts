@@ -1,0 +1,9 @@
+export const SET_BOOKS = 'SET_BOOKS';
+export const LOAD_BOOKS = 'LOAD_BOOKS';
+export const SET_TOTAL = 'SET_TOTAL';
+export const SET_SELECTED_BOOK = 'SET_SELECTED_BOOK';
+export const LOAD_SELECTED_BOOK = 'LOAD_SELECTED_BOOK';
+export const LOAD_SEARCH_BOOKS = 'LOAD_SEARCH_BOOKS';
+export const SET_SEARCH_BOOKS = 'SET_SEARCH_BOOKS';
+export const SET_SEARCH_TOTAL = 'SET_SEARCH_TOTAL';
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';

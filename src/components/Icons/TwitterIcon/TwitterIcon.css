@@ -1,0 +1,8 @@
+.twitter-icon {
+  cursor: pointer;
+  padding: 16px;
+}
+
+.twitter-icon:hover svg path {
+  stroke: var(--contextual-red);
+}

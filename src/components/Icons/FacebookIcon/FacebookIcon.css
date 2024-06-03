@@ -1,0 +1,8 @@
+.facebook-icon {
+  cursor: pointer;
+  padding: 16px;
+}
+
+.facebook-icon:hover svg path {
+  stroke: var(--contextual-red);
+}

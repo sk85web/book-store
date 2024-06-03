@@ -1,0 +1,8 @@
+.up,
+.down {
+  cursor: pointer;
+}
+
+.up {
+  transform: rotate(180deg);
+}

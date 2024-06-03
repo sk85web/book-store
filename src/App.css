@@ -1,3 +1,96 @@
-.App {
+:root {
+  --primary: #313037;
+  --primary-light: #a8a8a8;
+  --secondary: #a8a8a8;
+
+  --bg-white: #ffffff;
+  --bg-gray: #e7e7e7;
+  --bg-light: #f7f7f7;
+
+  --contextual-red: #fc857f;
+
+  --blue: #d7e4fd;
+  --green: #caeff0;
+  --orange: #fee9e2;
+  --purple: #f4eefd;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/Inter/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/Inter/Inter-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/Inter/Inter-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/Inter/Inter-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/bebasNeue/BebasNeue.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/bebasNeue/BebasNeue.woff2') format('woff2');
+}
+
+*,
+::before,
+:after,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  max-width: 1920px;
+  font-family: 'Inter';
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+  font-family: 'Inter';
 }

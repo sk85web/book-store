@@ -1,0 +1,8 @@
+.profile-icon {
+  cursor: pointer;
+  padding: 16px;
+}
+
+.profile-icon:hover svg path {
+  stroke: var(--contextual-red);
+}

@@ -1,0 +1,8 @@
+.more-icon {
+  cursor: pointer;
+  padding: 16px;
+}
+
+.more-icon:hover svg path {
+  stroke: var(--contextual-red);
+}

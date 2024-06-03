@@ -1,0 +1,9 @@
+.arrow-icon {
+  cursor: pointer;
+  padding: 16px;
+  width: 42px;
+}
+
+.arrow-icon:hover svg path {
+  stroke: var(--contextual-red);
+}

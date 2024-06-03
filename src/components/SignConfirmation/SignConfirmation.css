@@ -1,0 +1,30 @@
+.sign-confirmation-container,
+.sign-confirmation-container-dark {
+}
+
+p {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.sign-confirmation-container-dark {
+  background-color: #313037;
+}
+
+.dark,
+.sign-confirmation-container-dark {
+  color: #fff;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sign-confirmation-btn {
+  padding: 40px;
+  margin: 0 auto;
+  border: 1px solid #dadada;
+  width: 624px;
+}

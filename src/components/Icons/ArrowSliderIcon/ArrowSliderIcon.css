@@ -1,0 +1,19 @@
+.left,
+.right {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.left svg rect,
+.right svg rect {
+  transition: fill linear 0.2s;
+}
+.left:hover svg rect,
+.right:hover svg rect {
+  fill: var(--primary-light);
+}
+
+.left {
+  transform: rotate(180deg);
+}

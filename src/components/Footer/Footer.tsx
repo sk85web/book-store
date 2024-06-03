@@ -1,11 +1,12 @@
-import React from 'react'
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div>
-      Footer
-    </div>
-  )
-}
+    <footer>
+      <span>©2022 Bookstore</span>
+      <span>All rights reserved</span>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

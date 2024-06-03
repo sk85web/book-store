@@ -1,0 +1,39 @@
+.profile-block {
+  margin-bottom: 48px;
+}
+
+.block-title {
+  text-transform: uppercase;
+  text-align: left;
+  font-family: 'BebasNeue';
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.input-container,
+.password-block-group {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.password-block-group {
+  border-bottom: 1px solid var(--bg-gray);
+  padding-bottom: 72px;
+}
+
+.form-input-style {
+  font-size: 16px;
+}
+
+.password-block-group {
+  margin-top: 16px;
+}
+
+.account-buttons-block {
+  display: flex;
+  align-self: flex-end;
+  gap: 32px;
+  width: 48%;
+  margin-top: 48px;
+}

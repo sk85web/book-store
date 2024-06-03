@@ -1,0 +1,80 @@
+.checkout {
+  width: 256px;
+  align-self: flex-end;
+  margin-top: 50px;
+}
+
+.checkout-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.book-info-item-price {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--primary);
+  font-family: 'BebasNeue';
+}
+
+.book-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-sum,
+.checkout-vat,
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-vat {
+  margin: 16px 0 24px;
+}
+
+.checkout-sum > *,
+.checkout-vat > * {
+  font-size: 16px;
+  font-weight: 400;
+}
+.checkout-sum > :nth-child(1),
+.checkout-vat > :nth-child(1) {
+  color: var(--secondary);
+}
+.checkout-sum > :nth-child(2),
+.checkout-vat > :nth-child(2) {
+  color: var(--primary);
+}
+
+.checkout-total > * {
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'BebasNeue';
+  margin-bottom: 24px;
+}
+
+.book-info-item {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.book-info-item-key {
+  color: var(--secondary);
+}
+
+.book-info-item-value {
+  color: var(--primary);
+}
+
+.more-info-header {
+  margin-top: 16px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+}

@@ -1,0 +1,376 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  row-gap: 48px;
+  column-gap: 32px;
+}
+
+.book {
+  transition: all 0.3s linear;
+}
+.book:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title,
+.no-results-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'BebasNeue';
+  text-align-last: left;
+  margin-bottom: 48px;
+}
+
+.no-results-title {
+  font-size: 46px;
+  color: var(--primary-light);
+  font-family: 'Inter';
+}
+
+.image-block {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.book-title {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'BebasNeue';
+  min-height: 64px;
+  margin-bottom: 8px;
+}
+
+.book-author,
+.search-subtitle {
+  color: var(--secondary);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.search-subtitle {
+  margin-top: 16px;
+  font-family: 'Inter';
+}
+
+.book-price {
+  font-family: 'BebasNeue';
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.book-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+/* ====================================== BookInfo ====================================== */
+.book-info-block {
+  margin: 32px 0 48px;
+}
+
+.book-info-title {
+  text-align: left;
+  margin-bottom: 24px;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.book-main-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 138px;
+  margin-bottom: 72px;
+}
+
+.book-image {
+  position: relative;
+  width: 50%;
+}
+
+.icon-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--primary);
+}
+
+.icon-block .heart-icon svg path {
+  stroke: var(--bg-white);
+}
+
+.icon-block:hover .heart-icon svg path {
+  stroke: var(--contextual-red);
+}
+
+.book-info {
+  border-top: 1px solid var(--bg-gray);
+  padding-top: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-info-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-info-header {
+  margin-bottom: 60px;
+}
+
+.book-info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.book-info-item-price {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--primary);
+  font-family: 'BebasNeue';
+}
+
+.book-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-info-content-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-info-item {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.book-info-item-key {
+  color: var(--secondary);
+}
+
+.book-info-item-value {
+  color: var(--primary);
+}
+
+.more-info-header {
+  margin-top: 16px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+}
+
+.detail-block-title {
+  cursor: pointer;
+  text-align: left;
+  color: var(--primary);
+}
+
+.detail-block-title:hover {
+  color: var(--primary-light);
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid var(--bg-gray);
+}
+
+.tab__header-block {
+  padding: 0 40px 24px;
+  cursor: pointer;
+}
+
+.tab__header-block_active {
+  border-bottom: 1px solid var(--primary);
+}
+
+.tab__header-block-title {
+  color: var(--secondary);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.tab__header-block-title_active {
+  color: var(--primary);
+}
+
+.tab__header-block-title:hover {
+  color: var(--primary);
+}
+
+.tabs__body {
+  margin: 48px 0;
+  font-weight: 400;
+  color: var(--primary);
+  text-align: left;
+}
+
+.tab__body-content {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.book-info-foter {
+  text-align: center;
+}
+
+.book-info-foter a {
+  display: block;
+  color: var(--primary);
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+.book-info-foter a:hover {
+  color: var(--primary-light);
+}
+
+.social-block {
+  display: flex;
+}
+
+/* ====================================== /BookInfo ====================================== */
+
+/* ====================================== Cart ====================================== */
+.cart-items,
+.favorites-items {
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+}
+
+.cart-item,
+.favorites-item {
+  height: 192px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-info,
+.favorites-item-info {
+  height: 100%;
+  display: flex;
+  gap: 32px;
+}
+
+.item-info {
+  text-align: left;
+  width: 446px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-family: 'BebasNeue';
+}
+
+.item-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary);
+  margin-bottom: 24px;
+}
+
+.item-price {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'BebasNeue';
+}
+
+.item-counter {
+  display: flex;
+  gap: 16px;
+}
+
+.item-counter > * {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--primary);
+  font-family: 'BebasNeue';
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-counter > :nth-child(1),
+.item-counter > :nth-child(3),
+.cart-item-btn {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 20px;
+  transition: all 0.2s linear;
+}
+
+.item-counter > :nth-child(1),
+.item-counter > :nth-child(3) {
+  font-size: 40px;
+}
+
+.item-counter > :nth-child(1):hover,
+.item-counter > :nth-child(3):hover,
+.cart-item-btn:hover {
+  background-color: var(--secondary);
+}
+
+.item-counter > :nth-child(1):active,
+.item-counter > :nth-child(3):active,
+.cart-item-btn:active {
+  border: 1px solid var(--primary);
+}

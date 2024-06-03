@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 72px;
+  border-top: 1px solid var(--bg-gray);
+  font-size: 16px;
+}
+
+.current-page {
+  cursor: pointer;
+}

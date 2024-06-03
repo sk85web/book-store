@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  padding: 16px 0;
+  background-color: var(--primary);
+  color: var(--bg-white);
+  font-family: 'BebasNeue';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.button:active {
+  /* border: -1px solid var(--primary); */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

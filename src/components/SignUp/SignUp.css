@@ -1,0 +1,33 @@
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.forgot-pass {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.forgot-pass:hover {
+  color: var(--primary-light);
+}
+
+.form-button-block {
+  margin-top: 25px;
+}
+
+.form-button {
+  letter-spacing: 5px;
+}
+
+.form-button:disabled {
+  background-color: var(--bg-gray);
+  cursor: not-allowed;
+}
