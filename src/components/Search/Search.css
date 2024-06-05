@@ -1,6 +1,6 @@
 .search {
   padding: 12px 15px;
-  width: 540px;
+  width: 100%;
   outline: none;
   border: 1px solid var(--bg-gray);
 }
@@ -30,6 +30,7 @@
 
 .search-list {
   position: relative;
+  width: 60%;
 }
 
 .search-results {

@@ -26,7 +26,7 @@ const Account = () => {
     confirmation: '',
   });
 
-  console.log(currentUser);
+  // console.log(currentUser);
 
   useEffect(() => {
     setFormState({
@@ -45,17 +45,19 @@ const Account = () => {
     }));
   };
 
-  const changeUserData = async () => {
+  const changeUserData = () => {
     const { email } = formState;
     if (email !== currentUser.email) {
-      await dispatch(resetUserEmail({ email: currentUser.email }));
-      await dispatch(confirmUserEmail({ new_email: email }));
+      dispatch(resetUserEmail({ email }));
     } else alert('Equel email');
   };
 
   const logOut = () => {
     localStorage.clear();
     navigate(ROUTES.AUTHORISATION);
+  };
+  const toMainPage = () => {
+    navigate(ROUTES.MAIN);
   };
 
   return (
@@ -128,7 +130,7 @@ const Account = () => {
       </div>
       <div className="account-buttons-block">
         <Button type={ButtonType.BUTTON} text="Save changes" onClick={changeUserData} />
-        <Button type={ButtonType.BUTTON} text="Cancel" />
+        <Button type={ButtonType.BUTTON} text="Cancel" onClick={toMainPage} />
         <Button type={ButtonType.BUTTON} text="Log out" onClick={logOut} />
       </div>
     </div>

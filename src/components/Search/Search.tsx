@@ -1,15 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { useCallback } from 'react';
+import { useState } from 'react';
 
 import './Search.css';
 import { SearchIcon } from '../Icons/SearchIcon';
-import { useState } from 'react';
 import { ROUTES } from '../../utils/routes';
 import { IStoreState } from '../../types';
 import { loadSearchBooks } from '../../redux/actionCreators/bookActionCreator';
 import SearchPopup from './SearchPopup/SearchPopup';
+import { setCurrentPage } from '../../redux/actionCreators/bookActionCreator';
 
 const Search = () => {
   const navigate = useNavigate();
@@ -33,6 +33,7 @@ const Search = () => {
       navigate(`${ROUTES.SEARCH}/${value}`);
       setValue('');
       setIsOpen(false);
+      dispatch(setCurrentPage('1'));
     }
   };
 

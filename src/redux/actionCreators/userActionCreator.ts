@@ -103,29 +103,32 @@ function* resetEmail(action: any) {
     },
   );
   if (resp.status === 204) {
-    alert('Success');
-  } else if (resp.status === 400) {
-    alert('User with these data already exists');
-  } else {
-    alert('Bad response');
+    const data: string = yield resp.json();
+    // yield put(confirmUserEmail(data.new_email));
   }
 }
 
 function* confirmEmail(action: any) {
-  const token: string = yield getToken();
-  const resp: Response = yield fetch(
-    `https://studapi.teachmeskills.by/auth/users/reset_email_confirm/`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`,
+  try {
+    const resp: Response = yield fetch(
+      `https://studapi.teachmeskills.by/auth/users/reset_email_confirm/`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ new_email: action.new_email }),
       },
-      body: JSON.stringify(action.new_email),
-    },
-  );
-  console.log('confirm', resp);
-  console.log('confirm status', resp.status);
+    );
+
+    if (resp.status === 200) {
+      console.log('Email confirmed successfully.');
+    } else {
+      console.error('Failed to confirm email:', resp.statusText);
+    }
+  } catch (error) {
+    console.error('Error in confirmEmail saga:', error);
+  }
 }
 
 function* signUp(action: any) {

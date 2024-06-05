@@ -12,3 +12,12 @@ h1 {
   font-family: 'BebasNeue';
   color: var(--primary);
 }
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

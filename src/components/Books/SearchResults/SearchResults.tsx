@@ -22,7 +22,7 @@ const SearchResults = () => {
     <div>
       <h1 className="title">
         '{query}' search results
-        <p className="search-subtitle">Found {books.length} books</p>
+        <p className="search-subtitle">Found {total} books</p>
       </h1>
       {books.length ? (
         <>

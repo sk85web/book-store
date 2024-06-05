@@ -85,7 +85,6 @@ function* fetchSearchBooks(action: any) {
   try {
     const resp: Response = yield fetch(`${url}`);
     const fetchSearchData: IBooksApiResponse = yield resp.json();
-    console.log(fetchSearchData);
     yield put(setSearchBooks(fetchSearchData.books));
     yield put(setSearchTotal(fetchSearchData.total));
   } catch (error) {

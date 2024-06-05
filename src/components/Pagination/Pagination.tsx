@@ -15,7 +15,6 @@ const Pagination = () => {
   const query = useSelector((state: IStoreState) => state.books.query);
 
   const pagesCount = Math.ceil(+total / 10);
-  console.log(total);
   const dispatch = useDispatch();
 
   const handlePrevPage = () => {
